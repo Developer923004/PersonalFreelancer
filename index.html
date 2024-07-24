@@ -1,32 +1,48 @@
 <!DOCTYPE html>
+
+<!--ESPECIFICAMOS EL LENGUAJE EN QUE QUEREMOS VER LA PAGINA-->
 <html lang="en">
 
+
 <head>
+
+  <!--ESPECIFICA QUE EL DOCUMENTO UTILIZA CARACTERES UTF-8 COMUNMENTE UTILIZADOS EN TODAS LAS PAGINAS-->
   <meta charset="utf-8">
+
+  <!--DEFINE LAS PROPIEDADES PARA EL DISENO WEB ADAPTABLE (RESPONSIVE)-->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+
+  <!--TITULO DE LA PAGINA-->
+  <title>Personal-Freenlancer</title>
+
+  <!--SE UTILIZA PARA LOS MOTORES DE BUSQUEDA EN CUENTO A PALARAS CLAVES Y DESCRIPCION-->
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- ICONOS E IMAGENES DE FAVICON PARA QUE SE APLIQUEN EN LA PAGINA ESTA APARECERA EN LA PANTALLA DEL NAVEGADOR  -->
   <link href="assets/img/favicon.png" rel="icon">
+  <!--ICONOS E IMAGENES DE APLLE TOUCH CUANDO SEA UTILIZADO EN DISPOSITIVOS MOVILES-->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- IMPORTAN LAS FUENTES DE GOOLE FONTS -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
+  <!--IMPORTACION DE FUENTES 'ROBOTO','POPPINS' Y 'RALEWAY' Y SUS VARIACIONES (PESOS Y ESTILOS)-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- ENLAZAN ARCHIVOS CSS EN EL DIRECTORIO LOCAL 'ASSETS' DE ESTE PROYECTO -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- ENLAZAN ARCHIVOS CSS EN EL DIRECTORIO LOCAL 'MAIN.CSS' PERSONALIZADO DE ESTE PROYECTO -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <!--REFERENCIAS DE LA PLANTILLA-->
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -36,21 +52,31 @@
   ======================================================== -->
 </head>
 
+<!--ABRE LA ETIQUEDA BODY Y ASIGNA ALA PAGINA UNA CLASE CSS LLAMADA 'INDEX-PAGE' -->
 <body class="index-page">
 
+  <!--INICIA LA ETIQUETA DEL ENCABEZADO DE LA PAGINA WEB
+  SE APLICAN TRES CLASES CSS 'HEADER', 'DARK-BACGROUND' Y 'D-FLEX FLEX-COLUM'
+  ESTO INDICA QUE TENDRA UN FONDO NEGRO Y Y SE UTILIZARA FLEBOX PARA ORGANIZAR LOS ELEMENTOS VERTICALMENTE -->
   <header id="header" class="header dark-background d-flex flex-column">
+    <!--SE UTILIZA COMO BOTON DE ALTERNANCIA 'TOGGLE' PARA MOSTRAR U OCULTAR DEL MENU EN DISPOSITIVOS EXTRAGRANDES
+    ('D-XL-NONE') UTILIZA CLASES DE BOOSTRAP ICONS ('BI BI-LIST') PARA DEFINIR EL ICONO-->
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
+    <!--MUESTRA IMAGEN DE PERFIL DENTRO DE UN CONTENEDOR CON CLASE 'PROFILE-IMG' LA IMAGEN SE CARGA DESDE 'ASSETS
+    Y SE MUESTRA CON BORDES REDONDEADOS'-->
     <div class="profile-img">
       <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
+    <!--CREAMOS ENLACE COMO EL LOGO DEL SITIO OFICIAL POR DEFECTO-->
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Alex Smith</h1>
     </a>
 
+      <!--ICONOS DE REDES SOCIALES-->
     <div class="social-links text-center">
       <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -59,14 +85,18 @@
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
+    <!---MENU DE NAVEGACION CON ID Y CLASE PARA AGREGAR ESTILOS DESDE CSS O JAVASCRIPT-->
     <nav id="navmenu" class="navmenu">
       <ul>
+        <!--MENU CON LOS ENLACES A DIFERENTES SITIOS DE LA MISMA PAGINA #-->
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          
+          <!--SUBMENU DENTRO DE UNA DE LAS OPCIONES DEL MENU PRINCIAPAL-->
           <ul>
             <li><a href="#">Dropdown 1</a></li>
             <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -89,36 +119,48 @@
 
   </header>
 
+  <!--DEFINIMOS EL CONTENIDO PRICIPAL DE  LA PAGINA-->
   <main class="main">
 
-    <!-- Hero Section -->
+    <!-- SECCION INTRODUCION CON ID HERO -->
     <section id="hero" class="hero section dark-background">
 
+      <!--COLOCAMOS IMAGEN DE FONDO  'DATA-AOS = FADE-IN' INDICA QUE AL CARGAR LA PAGINA APARECERA CON ANIMACION DE DESVANECIMIENTO-->
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
+      <!--CONTENIDO TEXTUAL CON ANIMACION DE DESVANECIDO HACIA ARRIBA CON UN RETRADO DE 100 MILISEGUNDOS
+      Y EL PARRAFO CON UN EFECTO FONT DE MAQUINA DE ESCRIBIR( TYPED) Y SE ALTERNAN LAS PALABRAS 
+      'DESIGNER, DEVELOPER, FREELANCER, PHOTOGRAFIC'-->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Alex Smith</h2>
         <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /CIERRE SECCION INTRODUCION -->
 
-    <!-- About Section -->
+
+    <!-- SECCION INTRODUCION CON ID ABOUT Y LAS CLASES 'ABOUT Y SECTION' -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
+      <!-- SECCION TITULO 
+       CON ANIMACION DE EFECTO HACIA ARRIBA 'FADE-UP Y UN PARRAFO'-->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+      </div><!-- CIERRE SECCION TITULO -->
 
+      <!--DIV CON ANIMACION HACIA ARRIBA 'FADE-UP' CON RETRASO DE 100 MILISEGUNDOS-->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <!--AGREGAMOS UNA FILA QUE CONTIENE DOS COLUMNAS 'col-lg-4' Y col-lg-8 -->
         <div class="row gy-4 justify-content-center">
+
           <div class="col-lg-4">
+            <!--IMAGEN DE PERFIL-->
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
+            <!--ESTA FILA CONTIENE UN TITULO, UN PARRAFO Y DOS SUBFILAS Y DOS LISTA DE DETALLES PERSONALES-->
             <h2>UI/UX Designer &amp; Web Developer.</h2>
             <p class="fst-italic py-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -151,6 +193,7 @@
 
       </div>
 
+      
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
