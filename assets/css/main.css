@@ -43,22 +43,23 @@ DE TODO EL SITIO WEB*/
 
 /*(Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors
  to allow for more customization options)*/
-:root {
+/*
+ :root {
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
                            /*COLOR PREDETERMINADO DE LOS ENLACES DEL MENU DE NAVEGACION PRINCIPAL*/
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  /*--nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
                                /*ENLACES DEL MENU DE NAVEGACION PRINCIPAL CUANDO SE ENCUENTRAN SOBRE ELLOSO CUANDO ESTAN ACTIVOS*/
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
+  /*--nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
                                             /*SE UTILIZA COMO COLOR DE FONDO PARA EL MENU DE NAVEGACION MOVIL*/
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  /*--nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
                                              /*SE UTILIZA COMO COLOR DE FONDO PARA LOS ELEMNETOS DESPLEGABLES QUE APAR5ECEN AL PASAR EL CURSOR SOBRE 
                                              LOS ELEMNETOS DE NAVEGACION PRINCIPALES*/
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
+  /*--nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
                                   /*SE UTILIZA PARA ENLACES DE NAVEGACION DE LOS ELEMENTOS DESPLEGABLES EN EL MENU DE NAVEGACION*/
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  /*--nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
                                       /*SIMILAR A NAV-HOVER-COLOR, ESTE COLOR SE APLICA A LOS ENLACES DE NAVEGACION DESPLEGABLES CUANDO
                                       SE PASA EL CURSOR SOBRE ELLOS*/
-}
+/*}
 
 
 /*AJUSTES PREESTABLECIDOS DE COLOR- ESTAS CLASES ANULAN LOS COLORES GLOBALES CUANDO SE APLICAN A CUALQUIER SECCION O ELEMNETO,
