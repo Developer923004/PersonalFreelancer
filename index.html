@@ -1,32 +1,43 @@
 <!DOCTYPE html>
+
+<!--ESPECIFICAMOS EL LENGUAJE EN QUE QUEREMOS VER LA PAGINA-->
 <html lang="en">
 
 <head>
+  <!--ESPECIFICA QUE EL DOCUMENTO UTILIZA CARACTERES UTF-8 COMUNMENTE UTILIZADOS EN TODAS LAS PAGINAS-->
   <meta charset="utf-8">
+  <!--DEFINE LAS PROPIEDADES PARA EL DISENO WEB ADAPTABLE (RESPONSIVE)-->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <!--TITULO DE LA PAGINA-->
+  <title>Personal Freelancer</title>
+  <!--SE UTILIZA PARA LOS MOTORES DE BUSQUEDA EN CUENTO A DESCRIPCION y PALARAS CLAVES-->
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- ICONOS E IMAGENES DE FAVICON PARA QUE SE APLIQUEN EN LA PAGINA ESTA APARECERA EN LA PANTALLA DEL NAVEGADOR  -->
   <link href="assets/img/favicon.png" rel="icon">
+  <!--ICONOS E IMAGENES DE APLLE TOUCH CUANDO SEA UTILIZADO EN DISPOSITIVOS MOVILES-->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+   <!-- IMPORTAN LAS FUENTES DE GOOLE FONTS -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
+  <!--IMPORTACION DE FUENTES 'ROBOTO','POPPINS' Y 'RALEWAY' Y SUS VARIACIONES (PESOS Y ESTILOS)-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- ENLAZAN ARCHIVOS CSS DE BOOSTRAP EN EL DIRECTORIO LOCAL 'ASSETS' DE ESTE PROYECTO -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- ARCHIVO MAIN CSS -->
+  <!-- ENLAZAN ARCHIVOS CSS EN EL DIRECTORIO LOCAL 'MAIN.CSS' PERSONALIZADO DE ESTE PROYECTO -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <!--REFERENCIAS DE LA PLANTILLA-->
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -36,33 +47,51 @@
   ======================================================== -->
 </head>
 
+<!--ABRE LA ETIQUEDA BODY Y ASIGNA ALA PAGINA UNA CLASE CSS LLAMADA "index-page" -->
 <body class="index-page">
-
+  
+  <!--INICIA LA ETIQUETA DEL ENCABEZADO DE LA PAGINA WEB  SE APLICAN 1 CLASES CSS 'HEADER', 'DARK-BACGROUND'=FONDO NEGRO
+   Y 'D-FLEX FLEX-COLUM'= SE UTILIZA FLEBOX PARA ORGANIZAR EL REPONSIVE VERTICALMENTE -->
   <header id="header" class="header dark-background d-flex flex-column">
+
+    <!--SE UTILIZA COMO BOTON DE ALTERNANCIA 'TOGGLE' PARA MOSTRAR U OCULTAR DEL MENU EN DISPOSITIVOS EXTRAGRANDES
+    ('D-XL-NONE')= UTILIZA CLASES DE BOOSTRAP ICONS=('BI BI-LIST') PARA DEFINIR EL ICONO-->
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <!--FOTO DE PERFIL-->
+    <!--MUESTRA IMAGEN DE PERFIL DENTRO DE UN CONTENEDOR CON CLASE "profile-img" LA IMAGEN SE CARGA DESDE 'ASSETS
+    Y (rounded-circle)=SE MUESTRA CON BORDES REDONDEADOS'-->
     <div class="profile-img">
       <img src="assets/img/Perfil.jpg"  alt="" class="img-fluid"> <!--rounded-circle-->
     </div>
 
     <!--HIPERVINCULO NOMBRE DE PERFIL-->
+    <!--SE CREA UN ENLACE QUE APUNTA A UNARCHIVO index.html-->
+    <!--"logo" LOGO -->
+    <!--"d-flex align-items-center justify-content-center" SE ESTILIZAR CON BOOSTRAP Y SE CENTRAL VERTICAL COMO HORIZONTALMENTE-->
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
 
        <!--NOMBRE DE PERFIL-->
+       <!--SE ASIGNA UNA CLASE "sitename"-->
       <h1 class="sitename">Jhon Stid Roa H.</h1>
     </a>
 
+    <!--SE CREA UN DIV CON 2 CLASES = "social-links text-center"-->
+    <!--"social-links= SE UTILIZA PARA APLICAR ESTILOS ESPECIFICOS DE REDES SOCIALES
+     text-center"= SE UTILIZA PARA CENTRAR EL CONTENIDO HORIZONTALMENTE DENTRO DEL DIV UTILIZANDO ESTILOS DE BOOSTRAP-->
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <!--HIPERVICULOS # = VACIO-->
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a><!--bi bi-twitter-x= DA ESTILO DESDE BOOSTRAP PARA EL ICONO DE TWITTER-->
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a><!--bi bi-facebook= DA ESTILO DESDE BOOSTRAP PARA EL ICONO DE FACEBOOK-->
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a><!--bi bi-instagram= DA ESTILO DESDE BOOSTRAP PARA EL ICONO DE INSTAGRAM-->
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a><!--bi bi-skype= DA ESTILO DESDE BOOSTRAP PARA EL ICONO DE SKYPE-->
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a><!--bi bi-linkedin= DA ESTILO DESDE BOOSTRAP PARA EL ICONO DE LINKEDIN-->
     </div>
 
+
+    <!--CREAMOS MENU DE NAVEGACION Y ASIGNAMOS EL ID ="navmenu" Y LA CLASE="navmenu" -->
     <nav id="navmenu" class="navmenu">
       <ul>
 
