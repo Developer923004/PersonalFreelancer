@@ -58,9 +58,9 @@
 }
 
 /*--------------------------------------------------------------
-# General Styling & Shared Classes
+# ESTILO GENERAL Y CLASES COMPARTIDAS
 --------------------------------------------------------------*/
-body {
+/*body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -86,9 +86,11 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+*/
 
-/* PHP Email Form Messages
+/* MENSAJES DE FORMULARIO DE CORREO ELECTRONICO PHP
 ------------------------------*/
+/*
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -138,11 +140,12 @@ h6 {
     transform: rotate(360deg);
   }
 }
+*/
 
 /*--------------------------------------------------------------
-# Global Header
+# ENCABEZADO GLOBAL
 --------------------------------------------------------------*/
-.header {
+/*.header {
   color: var(--default-color);
   background-color: var(--background-color);
   position: fixed;
@@ -156,9 +159,10 @@ h6 {
   z-index: 997;
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
+*/
 
-
-/*FOTO DE PERFIL */
+/*FOTO DE PERFIL SOLO LA FOTO NO EL CIRCULO*/
+/*
 .header .profile-img img {
   margin: 15px auto;
   display: block;
@@ -247,10 +251,12 @@ h6 {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
+*/
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# MENU DE NAVEGACION
 --------------------------------------------------------------*/
+/*
 .mobile-nav-toggle {
   display: none;
 }
@@ -362,10 +368,13 @@ h6 {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Global Footer
+# PIE DE PAGINA GLOBAL
 --------------------------------------------------------------*/
+/*
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -384,10 +393,12 @@ h6 {
   font-size: 13px;
   text-align: center;
 }
+*/
 
 /*--------------------------------------------------------------
-# Preloader
+# PRECARGADOR
 --------------------------------------------------------------*/
+/*
 #preloader {
   position: fixed;
   inset: 0;
@@ -419,11 +430,13 @@ h6 {
     transform: rotate(360deg);
   }
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Scroll Top Button
+# BOTON SUPERIOR DE DESPLAZAMIENO----(Scroll Top Button)
 --------------------------------------------------------------*/
-.scroll-top {
+/*.scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -453,20 +466,25 @@ h6 {
   opacity: 1;
   bottom: 15px;
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
+# DESABILITADOR DE RETRASO DE LA ANIMACION IOS EN DISPOSITIVOS MOVILES
+(Disable aos animation delay on mobile devices)
 --------------------------------------------------------------*/
+/*
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
+*/
 
 /*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
+# TITULOS DE PAGINAS GLOBALES Y RUTAS DE NAVEGACION --(Global Page Titles & Breadcrumbs)
 --------------------------------------------------------------*/
-.page-title {
+/*.page-title {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 25px 0;
@@ -498,10 +516,12 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
+*/
 
 /*--------------------------------------------------------------
-# Global Sections
+# SECCIONES GLOBALES---(Global Sections)
 --------------------------------------------------------------*/
+/*
 section,
 .section {
   color: var(--default-color);
@@ -509,10 +529,12 @@ section,
   padding: 60px 0;
   overflow: clip;
 }
+*/
 
 /*--------------------------------------------------------------
-# Global Section Titles
+# TITULOS DE SECCIONES GLOBALES----(Global Section Titles)
 --------------------------------------------------------------*/
+/*
 .section-title {
   padding-bottom: 60px;
   position: relative;
@@ -540,11 +562,13 @@ section,
 .section-title p {
   margin-bottom: 0;
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Hero Section
+# SECCION DE HEROE----(Hero Section)
 --------------------------------------------------------------*/
-.hero {
+/*.hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -619,11 +643,13 @@ section,
     font-size: 20px;
   }
 }
+*/
+
 
 /*--------------------------------------------------------------
-# About Section
+# ACERCA DE LA SECCION----(About Section)
 --------------------------------------------------------------*/
-.about .content h2 {
+/*.about .content h2 {
   font-weight: 700;
   font-size: 24px;
 }
@@ -649,10 +675,12 @@ section,
   color: var(--accent-color);
   line-height: 0;
 }
+*/
 
 /*--------------------------------------------------------------
-# Stats Section
+# SECCION DE ESTADISTICAS ---(Stats Section)
 --------------------------------------------------------------*/
+/*
 .stats .stats-item {
   padding: 30px;
   width: 100%;
@@ -682,10 +710,12 @@ section,
   font-family: var(--heading-font);
   font-size: 14px;
 }
+*/
 
 /*--------------------------------------------------------------
-# Skills Section
+# SECCION DE HABILIDADES--------(Skills Section)
 --------------------------------------------------------------*/
+/*
 .skills .progress {
   height: 60px;
   display: block;
@@ -719,10 +749,13 @@ section,
   transition: 0.9s;
   background-color: var(--accent-color);
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Resume Section
+# SECCION DE CURRICULUM------(Resume Section)
 --------------------------------------------------------------*/
+/*
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
@@ -778,10 +811,14 @@ section,
   background: var(--background-color);
   border: 2px solid var(--accent-color);
 }
+*/
+
+
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# SECCION DE CARTERA----(Portfolio Section)
 --------------------------------------------------------------*/
+/*
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -891,10 +928,13 @@ section,
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Services Section
+# SECCION DE SERVICIOS---------(Services Section)
 --------------------------------------------------------------*/
+/*
 .services .service-item {
   position: relative;
 }
@@ -944,10 +984,14 @@ section,
   line-height: 24px;
   font-size: 14px;
 }
+*/
+
+
 
 /*--------------------------------------------------------------
-# Testimonials Section
+# SECCION DE TESTIMONIOS--------(Testimonials Section)
 --------------------------------------------------------------*/
+/*
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1041,10 +1085,12 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+*/
 
 /*--------------------------------------------------------------
-# Contact Section
+# SECCION DE CONTACTO--------(Contact Section)
 --------------------------------------------------------------*/
+/*
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1142,10 +1188,13 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
+*/
+
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# SECCION DE DETALLES DE LA CARTERA---------------(Portfolio Details Section)
 --------------------------------------------------------------*/
+/*
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -1203,10 +1252,12 @@ section,
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+*/
 
 /*--------------------------------------------------------------
-# Service Details Section
+# SECCION DE DETALLES DE SERVICIO---------------(Service Details Section)
 --------------------------------------------------------------*/
+/*
 .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -1268,10 +1319,13 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+*/
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# SECCION DE INICIO DE SESION----------------------(Starter Section Section)
 --------------------------------------------------------------*/
+/*
 .starter-section {
-  /* Add your styles here */
+  --- Add your styles here
 }
+*/
