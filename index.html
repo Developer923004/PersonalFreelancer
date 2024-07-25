@@ -1,49 +1,32 @@
 <!DOCTYPE html>
-
-<!--ESPECIFICAMOS EL LENGUAJE EN QUE QUEREMOS VER LA PAGINA-->
 <html lang="en">
 
-
 <head>
-
-  <!--ESPECIFICA QUE EL DOCUMENTO UTILIZA CARACTERES UTF-8 COMUNMENTE UTILIZADOS EN TODAS LAS PAGINAS-->
   <meta charset="utf-8">
-
-  <!--DEFINE LAS PROPIEDADES PARA EL DISENO WEB ADAPTABLE (RESPONSIVE)-->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <!--TITULO DE LA PAGINA-->
-  <title>Personal-Freenlancer</title>
-
-  <!--SE UTILIZA PARA LOS MOTORES DE BUSQUEDA EN CUENTO A PALARAS CLAVES Y DESCRIPCION-->
+  <title>Index - iPortfolio Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- ICONOS E IMAGENES DE FAVICON PARA QUE SE APLIQUEN EN LA PAGINA ESTA APARECERA EN LA PANTALLA DEL NAVEGADOR  -->
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <!--ICONOS E IMAGENES DE APLLE TOUCH CUANDO SEA UTILIZADO EN DISPOSITIVOS MOVILES-->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- IMPORTAN LAS FUENTES DE GOOLE FONTS -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-
-  <!--IMPORTACION DE FUENTES 'ROBOTO','POPPINS' Y 'RALEWAY' Y SUS VARIACIONES (PESOS Y ESTILOS)-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- ENLAZAN ARCHIVOS CSS EN EL DIRECTORIO LOCAL 'ASSETS' DE ESTE PROYECTO -->
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- ENLAZAN ARCHIVOS CSS EN EL DIRECTORIO LOCAL 'MAIN.CSS' PERSONALIZADO DE ESTE PROYECTO -->
-  <!--link href="assets/css/main.css" rel="stylesheet"-->
-  <link href="main.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-
-  <!--REFERENCIAS DE LA PLANTILLA-->
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -53,31 +36,21 @@
   ======================================================== -->
 </head>
 
-<!--ABRE LA ETIQUEDA BODY Y ASIGNA ALA PAGINA UNA CLASE CSS LLAMADA 'INDEX-PAGE' -->
 <body class="index-page">
 
-  <!--INICIA LA ETIQUETA DEL ENCABEZADO DE LA PAGINA WEB
-  SE APLICAN TRES CLASES CSS 'HEADER', 'DARK-BACGROUND' Y 'D-FLEX FLEX-COLUM'
-  ESTO INDICA QUE TENDRA UN FONDO NEGRO Y Y SE UTILIZARA FLEBOX PARA ORGANIZAR LOS ELEMENTOS VERTICALMENTE -->
   <header id="header" class="header dark-background d-flex flex-column">
-    <!--SE UTILIZA COMO BOTON DE ALTERNANCIA 'TOGGLE' PARA MOSTRAR U OCULTAR DEL MENU EN DISPOSITIVOS EXTRAGRANDES
-    ('D-XL-NONE') UTILIZA CLASES DE BOOSTRAP ICONS ('BI BI-LIST') PARA DEFINIR EL ICONO-->
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <!--MUESTRA IMAGEN DE PERFIL DENTRO DE UN CONTENEDOR CON CLASE 'PROFILE-IMG' LA IMAGEN SE CARGA DESDE 'ASSETS
-    Y SE MUESTRA CON BORDES REDONDEADOS'-->
     <div class="profile-img">
       <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
-    <!--CREAMOS ENLACE COMO EL LOGO DEL SITIO OFICIAL POR DEFECTO-->
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Jhon Stid Roa H.</h1>
+      <h1 class="sitename">Alex Smith</h1>
     </a>
 
-      <!--ICONOS DE REDES SOCIALES-->
     <div class="social-links text-center">
       <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -86,18 +59,14 @@
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
-    <!---MENU DE NAVEGACION CON ID Y CLASE PARA AGREGAR ESTILOS DESDE CSS O JAVASCRIPT-->
     <nav id="navmenu" class="navmenu">
       <ul>
-        <!--MENU CON LOS ENLACES A DIFERENTES SITIOS DE LA MISMA PAGINA #-->
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          
-          <!--SUBMENU DENTRO DE UNA DE LAS OPCIONES DEL MENU PRINCIAPAL-->
           <ul>
             <li><a href="#">Dropdown 1</a></li>
             <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -120,48 +89,36 @@
 
   </header>
 
-  <!--DEFINIMOS EL CONTENIDO PRICIPAL DE  LA PAGINA-->
   <main class="main">
 
-    <!-- SECCION INTRODUCION CON ID HERO -->
+    <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <!--COLOCAMOS IMAGEN DE FONDO  'DATA-AOS = FADE-IN' INDICA QUE AL CARGAR LA PAGINA APARECERA CON ANIMACION DE DESVANECIMIENTO-->
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
-      <!--CONTENIDO TEXTUAL CON ANIMACION DE DESVANECIDO HACIA ARRIBA CON UN RETRADO DE 100 MILISEGUNDOS
-      Y EL PARRAFO CON UN EFECTO FONT DE MAQUINA DE ESCRIBIR( TYPED) Y SE ALTERNAN LAS PALABRAS 
-      'DESIGNER, DEVELOPER, FREELANCER, PHOTOGRAFIC'-->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Alex Smith</h2>
         <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section><!-- /CIERRE SECCION INTRODUCION -->
+    </section><!-- /Hero Section -->
 
-
-    <!-- SECCION INTRODUCION CON ID ABOUT Y LAS CLASES 'ABOUT Y SECTION' -->
+    <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- SECCION TITULO 
-       CON ANIMACION DE EFECTO HACIA ARRIBA 'FADE-UP Y UN PARRAFO'-->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- CIERRE SECCION TITULO -->
+      </div><!-- End Section Title -->
 
-      <!--DIV CON ANIMACION HACIA ARRIBA 'FADE-UP' CON RETRASO DE 100 MILISEGUNDOS-->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!--AGREGAMOS UNA FILA QUE CONTIENE DOS COLUMNAS 'col-lg-4' Y col-lg-8 -->
         <div class="row gy-4 justify-content-center">
-
           <div class="col-lg-4">
-            <!--IMAGEN DE PERFIL-->
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <!--ESTA FILA CONTIENE UN TITULO, UN PARRAFO Y DOS SUBFILAS Y DOS LISTA DE DETALLES PERSONALES-->
             <h2>UI/UX Designer &amp; Web Developer.</h2>
             <p class="fst-italic py-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -193,12 +150,10 @@
         </div>
 
       </div>
-    </section><!-- CIERRE SECCION INTRODUCION CON ID ABOUT Y LAS CLASES 'ABOUT Y SECTION' -->
 
+    </section><!-- /About Section -->
 
-
-
-    <!-- SECCION DE ESTADISTICAS ID= STATS CLASES= STATS Y SECTION -->
+    <!-- Stats Section -->
     <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -211,7 +166,7 @@
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
             </div>
-          </div><!-- ELEMENTOS DE ESTADITICAS 1 -->
+          </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
@@ -219,7 +174,7 @@
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
             </div>
-          </div><!-- ELEMENTOS DE ESTADITICAS 2 -->
+          </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
@@ -227,7 +182,7 @@
               <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
             </div>
-          </div><!-- ELEMENTOS DE ESTADITICAS 3 -->
+          </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
@@ -235,23 +190,22 @@
               <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
             </div>
-          </div><!-- ELEMENTOS DE ESTADITICAS 4 -->
+          </div><!-- End Stats Item -->
 
         </div>
 
       </div>
 
-    </section><!-- SECCION DE ESTADISTICAS ID= STATS CLASES= STATS Y SECTION -->
+    </section><!-- /Stats Section -->
 
-
-    <!-- SECCION DE HABILIDADES ID= 'skills' CLASES 'skills section'-->
+    <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
 
-      <!-- SECCION TITULO -->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- CIERRE SECCION TITULO -->
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -264,21 +218,21 @@
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- OBJETO DE HABILIDADES FINALES 1 -->
+            </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- OBJETO DE HABILIDADES FINALES 2 -->
+            </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- OBJETO DE HABILIDADES FINALES 3 -->
+            </div><!-- End Skills Item -->
 
           </div>
 
@@ -289,21 +243,21 @@
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- OBJETO DE HABILIDADES FINALES 4 -->
+            </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- OBJETO DE HABILIDADES FINALES 5 -->
+            </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- OBJETO DE HABILIDADES FINALES 6 -->
+            </div><!-- End Skills Item -->
 
           </div>
 
@@ -311,17 +265,16 @@
 
       </div>
 
-    </section><!-- CIERRE SECCION DE HABILIDADES ID= 'skills' CLASES 'skills section'-->
+    </section><!-- /Skills Section -->
 
-
-    <!-- SECCION RESUMEN ID 'resume' Y CLASES= 'resume section' -->
+    <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- SECCION TITULO -->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- CIERRE SECCION TITULO -->
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -338,7 +291,7 @@
                 <li>(123) 456-7891</li>
                 <li>alice.barkley@example.com</li>
               </ul>
-            </div><!-- RESUMEN ITEM 1-->
+            </div><!-- Edn Resume Item -->
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
@@ -346,14 +299,14 @@
               <h5>2015 - 2016</h5>
               <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
               <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- RESUMEN ITEM 2-->
+            </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
               <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
               <h5>2010 - 2014</h5>
               <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
               <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- RESUMEN ITEM 3-->
+            </div><!-- Edn Resume Item -->
 
           </div>
 
@@ -369,7 +322,7 @@
                 <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
                 <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
               </ul>
-            </div><!-- RESUMEN ITEM 4-->
+            </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
               <h4>Graphic design specialist</h4>
@@ -381,7 +334,7 @@
                 <li>Recommended and consulted with clients on the most appropriate graphic design</li>
                 <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
               </ul>
-            </div><!-- RESUMEN ITEM 5-->
+            </div><!-- Edn Resume Item -->
 
           </div>
 
@@ -389,18 +342,16 @@
 
       </div>
 
-    </section><!-- CIERRE SECCION RESUMEN ID 'resume' Y CLASES= 'resume section' -->
+    </section><!-- /Resume Section -->
 
-
-
-    <!-- SECCION EXPERIENCIA ID ='portfolio' Y CLASES 'portfolio section' -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
-      <!-- SECCION TITULO -->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- CIERRE SECCION TITULO  -->
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -426,7 +377,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 1-->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -438,7 +389,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 2 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -450,7 +401,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 3 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -462,7 +413,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 4 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -474,7 +425,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 5 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -486,7 +437,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 6 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -498,7 +449,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 7 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -510,7 +461,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 8-->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -522,7 +473,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 9 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -534,7 +485,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 10 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -546,7 +497,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 11 -->
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -558,7 +509,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- ITEM EXPERIENCIA 12-->
+            </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
 
@@ -566,17 +517,16 @@
 
       </div>
 
-    </section> <!-- CIERRE SECCION EXPERIENCIA ID ='portfolio' Y CLASES 'portfolio section' -->
+    </section><!-- /Portfolio Section -->
 
-
-    <!-- SECCION SERVICIOS ID= 'SERVICES' Y CLASES 'services section' -->
+    <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- SECCION TITULO -->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- CIERRE SECCION TITULO -->
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -589,7 +539,7 @@
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
-          <!-- ITEM SERVICIOS 1 -->
+          <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
@@ -597,7 +547,7 @@
               <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
-          </div><!-- ITEM SERVICIOS 2 -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
@@ -605,7 +555,7 @@
               <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
-          </div><!-- ITEM SERVICIOS 3 -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
@@ -613,7 +563,7 @@
               <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
-          </div><!-- ITEM SERVICIOS 4 -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
@@ -621,7 +571,7 @@
               <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-          </div><!-- ITEM SERVICIOS 5 -->
+          </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
@@ -629,36 +579,26 @@
               <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
-          </div><!-- ITEM SERVICIOS 6 -->
+          </div><!-- End Service Item -->
 
         </div>
 
       </div>
 
-    </section><!-- CIERRE SECCION SERVICIOS ID= 'SERVICES' Y CLASES 'services section' -->
+    </section><!-- /Services Section -->
 
-
-
-    <!-- SECCION DE TESTIMONIOS  ID='testimonials' Y CLASES = 'testimonials section'-->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
-      <!-- SECCION TITULO -->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- CIERRE SECCION TITULO -->
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-
-        <!--ESTE DIV AQUI SE CONTROLAN LAS CLSES DEL SLIDER O CARRUSEL CON LA LIBRERIA DE SWIPER.JS-->
         <div class="swiper init-swiper">
-          <!--AQUI APLICAMOS CONFIGURACION EN EL FORMATO JSON PARA PERSONALIZAR EL COMPORTAMIENTO Y LA APARIENCIA DEL SLIDER
-          LOOP='PERMITE QUE EL SLIDER SE REPITA DE MANERA CONTINUA
-          SPEED= VELOCIDAD ENTRE LAS DIAPOSITIVAS'
-          AUTOPLAY= 'REPRODUCCION AUTOMATICA'
-          SLIDESPREVIEW= 'DEFINIR CUANTAS DIAPOSITIVAS MUESTRO AL TIEMPO'
-          PAGINATION='CONFIGURACION PARA QUE MUESTRE INDICADORES DE PAGINAS EN FORMA DE PUNTOS'-->
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -684,9 +624,6 @@
               }
             }
           </script>
-
-
-          <!--DIAPOSITIVAS PARA EL SLIDER-->
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -700,7 +637,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- DIAPOSITIVA 1 -->
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -713,7 +650,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- DIAPOSITIVA 2 -->
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -726,7 +663,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- DIAPOSITIVA 3 -->
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -739,7 +676,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- DIAPOSITIVA 4 -->
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -752,7 +689,7 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- DIAPOSITIVA 5 -->
+            </div><!-- End testimonial item -->
 
           </div>
           <div class="swiper-pagination"></div>
@@ -760,16 +697,16 @@
 
       </div>
 
-    </section> <!-- SECCION DE TESTIMONIOS  ID='testimonials' Y CLASES = 'testimonials section'-->
+    </section><!-- /Testimonials Section -->
 
-    <!-- SECCION CONTACTO ID = CONTACT Y CLASES='contact section' -->
+    <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- CIERRE TITULO-->
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- CIERRE TITULO -->
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -784,7 +721,7 @@
                   <h3>Address</h3>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-              </div><!-- ITEM CONTACTO 1 -->
+              </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
@@ -792,7 +729,7 @@
                   <h3>Call Us</h3>
                   <p>+1 5589 55488 55</p>
                 </div>
-              </div><!-- ITEM CONTACTO 1 -->
+              </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -800,13 +737,12 @@
                   <h3>Email Us</h3>
                   <p>info@example.com</p>
                 </div>
-              </div><!-- ITEM CONTACTO 1 -->
+              </div><!-- End Info Item -->
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
-          <!--FORMULARIO -->
           <div class="col-lg-7">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
@@ -841,18 +777,16 @@
 
               </div>
             </form>
-          </div><!--CIERRE FORMULARIO -->
+          </div><!-- End Contact Form -->
 
         </div>
 
       </div>
 
-    </section><!-- SECCION CONTACTO ID = CONTACT Y CLASES='contact section' -->
+    </section><!-- /Contact Section -->
 
   </main>
 
-
-  <!--PIE DE PAGINA ID='footer' Y CLASES='footer'-->
   <footer id="footer" class="footer position-relative light-background">
 
     <div class="container">
@@ -868,15 +802,15 @@
       </div>
     </div>
 
-  </footer><!--PIE DE PAGINA ID='footer' Y CLASES='footer'-->
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- PRECARGAR -->
+  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- ARCHIVOS JS PROVEEDOR -->
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -889,7 +823,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="main.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 
