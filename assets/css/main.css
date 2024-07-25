@@ -95,7 +95,7 @@ LO QUE PROPORCIONA LA REUTILIZACION DEL MISMO ESQUEMA DE COLOR*/
 /*--------------------------------------------------------------
 # ESTILO GENERAL Y CLASES COMPARTIDAS
 --------------------------------------------------------------*/
-/*body {
+body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -121,7 +121,7 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-*/
+
 
 /* MENSAJES DE FORMULARIO DE CORREO ELECTRONICO PHP
 ------------------------------*/
