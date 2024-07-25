@@ -67,11 +67,14 @@ LO QUE PROPORCIONA LA REUTILIZACION DEL MISMO ESQUEMA DE COLOR*/
 /*(Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme.)*/
 
 
+/*
 .light-background {
   --background-color: #f4fafd;
   --surface-color: #ffffff;
 }
+*/
 
+/*
 .dark-background {
   --background-color: #040b14;
   --default-color: #ffffff;
@@ -79,11 +82,14 @@ LO QUE PROPORCIONA LA REUTILIZACION DEL MISMO ESQUEMA DE COLOR*/
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
+/*
 
 /* Smooth scroll */
+/*
 :root {
   scroll-behavior: smooth;
 }
+  */
 
 /*--------------------------------------------------------------
 # ESTILO GENERAL Y CLASES COMPARTIDAS
