@@ -20,6 +20,8 @@
 }
 */
 
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
 /*COLORES GLOBALES: LAS SIGUIENTES VARIABLES DE COLOR SE UTILIZAN EN TODO EL SITIO WEB ACTUALIZARLOS AQUI CAMBIARA LA COMBINACION DE COLORES.
 DE TODO EL SITIO WEB*/
 /*(Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme
@@ -48,9 +50,9 @@ TARJETAS,ICONOS O CUADROS ESTO AYUDA A SEPARAR VISUALMENTE LOS ELEMENTOS DEL FON
   /*--surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
                               /*EL COLOR DE LA SUPERFICIE SE UTILIZA COMO FONDO DE ELEMENTOS ENCUADRADOS DENTRO DE SECCIONES, COMO TARJETAS, CUADROS DE ICONOS U OTROS , ELEMENTOS QUE REQUIERAN UNA SEPARACION VISUAL*/
   /*--contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-                                /**/
+                                /*COLOR DE CONTRASTE PARA EL TEXTO , LO QUE GARANTIZA LA LEGIBILIDAD FRENTE A FONDOS DE ACENTO, TITULO O COLORES PREDETERMINADOS*/
 }
-
+/*---------------------------------------------------------------------------------------------------------------------------------------
 
 
 /*COLORES DEL MENU DE NAVEGACION : LAS SIGUIENTES VARIABLES DE COLOR SE UTILIZAN ESPECIFICAMENTE PARA EL MENU DE NAVEGACION
