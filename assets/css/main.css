@@ -20,8 +20,8 @@
 }
 */
 
-
-/*------------------------------------------------------------------------------------------------------------------------------------------
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+/*-------------------------------------------COLORES GLOBALES SITIO WEB------------------------------------------------------------------------
 /*COLORES GLOBALES: LAS SIGUIENTES VARIABLES DE COLOR SE UTILIZAN EN TODO EL SITIO WEB ACTUALIZARLOS AQUI CAMBIARA LA COMBINACION DE COLORES.
 DE TODO EL SITIO WEB*/
 /*(Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme
@@ -226,9 +226,11 @@ h6 {
   width: 120px;*/
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
-/*
+
+/*----------------------HIPERVINCULO NOMBRE DE PERFIL INCIO--------------------------------------*/
+/**/
 .header .logo {
-  line-height: 1;
+  line-height: 10;
   margin-bottom: 15px;
 }
 
@@ -243,11 +245,17 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
+/*----------------------HIPERVINCULO NOMBRE DE PERFIL FIN--------------------------------------*/
+
+
+
+
+
 
 .header .social-links {
   margin: 0 0 20px 0;
 }
-*/
+
 
 .header .social-links a {
  /* font-size: 16px;
