@@ -22,17 +22,33 @@
 
 /*COLORES GLOBALES: LAS SIGUIENTES VARIABLES DE COLOR SE UTILIZAN EN TODO EL SITIO WEB ACTUALIZARLOS AQUI CAMBIARA LA COMBINACION DE COLORES.
 DE TODO EL SITIO WEB*/
-
 /*(Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme
  of the entire website) */
  
+/*:root {} = SE UTILIZA PARA DEFINIR VARIABLES GLOBALES EN CSS QUE SE VAN A UTILIZAR EN TODO EL DOCUMENTO*/
+/*--background-color: #ffffff = SE CREA VARIABLE GLOBAL PARA DEFINIR QUE EL FONDO DEL DOCUMENTOS SEA COLOR:BLANCO (PARA TODOS LAS HOJAS)
+/*--default-color: #272829 = SE CREA VARIABLE GLOBAL PARA DEFINIR QUE LA MAYORIA DEL TEXO SEA GRIS OSCURO EN EL DOCUMENTOS (PARA TODOS LAS HOJAS)*/
+/*--heading-color: #050d18 = SE CREA VARIABLE GLOBAL PARA DEFINIR EL COLOR PARA LOS ENCABEZADOS EN EL DOCUMENTO COLOR:AZUL OSCURO CASI NEGRO (PARA TODOS LAS HOJAS)*/
+/*--accent-color: #149ddd = SE CREA VARIABLE GLOBAL PARA DEFINIR EL COLOR DEL ACENTO PARA LOS ELEMENTOS DESTACADOS COMO:
+BOTONES,ENLACES, Y OTROS COMPONENTES QUE NECESITEN LLAMAR LA ATENCION IDEAL PARA ELEMENTOS INTERACTIVOS EN EL DOCUMENTO COLOR:AZUL BRILLANTE (PARA TODOS LAS HOJAS)*/
+/*--surface-color: #ffffff; = SE CREA VARIABLE GLOBAL PARA DEFINIR EL COLOR DE FONDO ELEMENTOS DE CAJA DENTRO DE SECCIONES COMO:
+TARJETAS,ICONOS O CUADROS ESTO AYUDA A SEPARAR VISUALMENTE LOS ELEMENTOS DEL FONDO GENERAL EN EL DOCUMENTO COLOR:BLANCO (PARA TODOS LAS HOJAS)*/
+/*--contrast-color: #ffffff; = SE CREA VARIABLE GLOBAL PARA DEFINIR EL CONTRASTE PARA EL TEXTO EN EL DOCUMENTO COLOR:BLANCO (PARA TODOS LAS HOJAS)*/
+
+
 :root { 
-  /*--background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website 
+  /*--background-color: #ffffff; /* Background color for the entire website, including individual sections */ 
+                                 /* COLOR DE FONDO PARA TODO EL SITIO WEB, INCLUIDAS TODAS LAS SECCIONES INDIVIDUALES*/
+  --default-color: #272829; /* COLOR PREDETERMINADO UTILIZADO PARA LA MAYORIA DEL TEXTO EN TODO EL SITIO WEB
+                                (Default color used for the majority of the text content across the entire website)
   /*--heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  /*--accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+                               /*COLOR PARA TITULOS, SUBTITULO Y TITULO EN TODO EL SITIO WEB*/
+  /*--accent-color: #149ddd; /* Alor thccent coat represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+                             /*ALOR THCCENT COAT REPRESENTA SU MARCA EN EL SITIO WEB, SE UTILIZA PARA BOTONES, ENLACES Y OTROS. ELEMENTOS QUE DEBEN DESTACARSEN*/
   /*--surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+                              /*EL COLOR DE LA SUPERFICIE SE UTILIZA COMO FONDO DE ELEMENTOS ENCUADRADOS DENTRO DE SECCIONES, COMO TARJETAS, CUADROS DE ICONOS U OTROS , ELEMENTOS QUE REQUIERAN UNA SEPARACION VISUAL*/
   /*--contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+                                /**/
 }
 
 
