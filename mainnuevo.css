@@ -20,8 +20,8 @@
     Experiencia y parrafo,Servicios y parrafo,Proyectos y parrafo, Contacto y parrafo, formulario(Nombre, Correo electronico, Mensaje 
      y derecho de autor: © 2024 Mi Página Web. Todos los derechos reservados )*/
     --Color-por-defecto: #2E236C; 
-
-    --background-color: #FF4C4C;
+    /*VARIABLE PARA: el fondo de la pagina o paginas segun donde se reutilicen*/ 
+    --background-color: #EEEDEB;
  
 }
 
@@ -37,7 +37,7 @@ body {
      /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var= sirve para llamar las variables y reutilizarlas */
     background-color: var(--background-color);
      /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var= sirve para llamar las variables y reutilizarlas */
-    /*font-family: var(--default-font);
+    /*font-family: var(--default-font);*/
   }
   
   /*
