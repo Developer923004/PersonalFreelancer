@@ -15,11 +15,11 @@ body {
     /*ESTABLECE EL COLOR DEL TEXTO EN EL CUERPO DEL DOCUMENTO*/
     color: var(--Color-por-defecto);
     
-    background-color: var(--background-color);
-    font-family: var(--default-font);
+    /*background-color: var(--background-color);
+    font-family: var(--default-font);*/
   }
   
-  
+  /*
   a {
     color: var(--accent-color);
     text-decoration: none;
@@ -39,5 +39,5 @@ body {
   h6 {
     color: var(--heading-color);
     font-family: var(--heading-font);
-  }
+  }*/
   
