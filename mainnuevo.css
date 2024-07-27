@@ -1,11 +1,14 @@
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
 /*-------------------------------------------COLORES GLOBALES SITIO WEB------------------------------------------------------------------------
-/*---------------------------PARA LOS TEXTOS: */
+/*-------------------------- */
 /*creamos la variable "--Color-por-defecto" dentro de */
 :root {
-    --Color-por-defecto: #399918 /*#2E236C 
-    /*--default-color: #272829; /* COLOR PREDETERMINADO UTILIZADO PARA LA MAYORIA DEL TEXTO EN TODO EL SITIO WEB*/
+    /*PARA LOS TEXTOS: DE LA ESTRUCTURA BASICA DE HTML(viñetas del menu,Freelancer Personal Website,Perfil Profesional y parrafo,Acerca de mi y parrafo,
+    Experiencia y parrafo,Servicios y parrafo,Proyectos y parrafo, Contacto y parrafo, formulario(Nombre, Correo electronico, Mensaje 
+     y derecho de autor: © 2024 Mi Página Web. Todos los derechos reservados )*/
+    --Color-por-defecto: ##2E236C 
+   
 }
 
 
