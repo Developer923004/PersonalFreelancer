@@ -1,0 +1,43 @@
+
+
+:root {
+    --Color-por-defecto: #FFB200 
+    /*--default-color: #272829; /* COLOR PREDETERMINADO UTILIZADO PARA LA MAYORIA DEL TEXTO EN TODO EL SITIO WEB*/
+}
+
+
+/*--------------------------------------------------------------
+# ESTILO GENERAL Y CLASES COMPARTIDAS
+--------------------------------------------------------------*/
+
+/*APLICAMOS ESTILOS A TODOS LAS ETIQUETAS DE BODY EN GENERAL(TODAS LAS PAGINAS CON HTML)*/
+body {
+    /*ESTABLECE EL COLOR DEL TEXTO EN EL CUERPO DEL DOCUMENTO*/
+    color: var(--Color-por-defecto);
+    
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+  }
+  
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+  }
+  
