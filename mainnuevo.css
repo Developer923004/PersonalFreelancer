@@ -1,8 +1,7 @@
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------
 /*-------------------------------------------COLORES GLOBALES SITIO WEB------------------------------------------------------------------------
-/*-------------------------- */
-/*creamos la variable "--Color-por-defecto" dentro de */
+/*creamos la variable "--Color-por-defecto" dentro de root= sirve para definir variables globales para que se puedan llamar en todo el documento css*/
 :root {
     /*PARA LOS TEXTOS: DE LA ESTRUCTURA BASICA DE HTML(viñetas del menu,Freelancer Personal Website,Perfil Profesional y parrafo,Acerca de mi y parrafo,
     Experiencia y parrafo,Servicios y parrafo,Proyectos y parrafo, Contacto y parrafo, formulario(Nombre, Correo electronico, Mensaje 
@@ -18,11 +17,11 @@
 
 /*APLICAMOS ESTILOS A TODOS LAS ETIQUETAS DE BODY EN GENERAL(TODAS LAS PAGINAS CON HTML)*/
 body {
-    /*ESTABLECE EL COLOR DEL TEXTO EN EL CUERPO DEL DOCUMENTO*/
+    /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var= sirve para llamar las variables y reutilizarlas */
     color: var(--Color-por-defecto);
-    
-    /*background-color: var(--background-color);
-    font-family: var(--default-font);*/
+    /**/
+    background-color: var(--background-color);
+    font-family: var(--default-font);
   }
   
   /*
