@@ -1,7 +1,10 @@
 
-
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+/*-------------------------------------------COLORES GLOBALES SITIO WEB------------------------------------------------------------------------
+/*---------------------------PARA LOS TEXTOS: */
+/*creamos la variable "--Color-por-defecto" dentro de */
 :root {
-    --Color-por-defecto: #2E236C 
+    --Color-por-defecto: #399918 /*#2E236C 
     /*--default-color: #272829; /* COLOR PREDETERMINADO UTILIZADO PARA LA MAYORIA DEL TEXTO EN TODO EL SITIO WEB*/
 }
 
