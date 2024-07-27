@@ -21,6 +21,8 @@
     --Color-por-defecto: #2E236C; 
     /*VARIABLE PARA: el fondo de la pagina o paginas segun donde se reutilicen*/ 
     --Color-fondo-pagina: #EEEDEB;
+    /*VARIABLE PARA: el color del texto del los enlaces del menu de la pagina o paginas segun donde se reutilicen*/
+    --Color-texto-enlace: #149ddd;
  
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -40,20 +42,25 @@ body {
     font-family: var(--Fuente_por_defecto);
   }
   
-  
-  
+
+  /*APLICAMOS ESTILOS A TODOS LAS ETIQUETAS DE A EN GENERAL(TODAS LAS PAGINAS CON HTML) ENLACES DEL MENU*/
   a {
-    color: var(--accent-color);
+     /*llamamos la variable "--Color-texto-enlace" para colocar color a los enlaces del menu de la estructura basica de html var= sirve para llamar las variables y reutilizarlas, color=(colocar color al texto)*/
+    color: var(--Color-texto-enlace);
+    /*text-decoration=(es una propiedad CSS que controla el estilo de decoración del texto)= ,none=(Elimina el subrayado predeterminado de los enlaces)*/
     text-decoration: none;
+    /*transition=(propiedad CSS que permite que los cambios en las propiedades de un elemento ocurran de manera gradual en lugar de instantánea),
+    *0.3s=(especifica la duración de la transición en segundos (300 milisegundos). Esto significa que cualquier cambio en las propiedades que afectan al enlace (como el color) se animará durante 0.3 segundos*/
     transition: 0.3s;
   }
   
+  /*
   a:hover {
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
     text-decoration: none;
   }
   
-  /*
+  
   h1,
   h2,
   h3,
