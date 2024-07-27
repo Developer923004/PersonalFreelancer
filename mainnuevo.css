@@ -1,11 +1,16 @@
 /* Fonts */
 /*
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+/*-------------------------------------------FUENTES GLOBALES SITIO WEB------------------------------------------------------------------------
+/*creamos la variable "--Fuente_por_defecto" dentro de root= sirve para definir variables globales para que se puedan llamar en todo el documento css*/
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
-}
-*/
+    /*CREAMOS VARIABLE PARA: asignar diferentes tipos de fuentes de la font-family, y el navegador interpretara la primera qu este disponible segun el sistema del usuario segun los diferentes dispositivos y plataformas*/
+  --Fuente_por_defecto: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+} 
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -21,9 +26,10 @@
      y derecho de autor: © 2024 Mi Página Web. Todos los derechos reservados )*/
     --Color-por-defecto: #2E236C; 
     /*VARIABLE PARA: el fondo de la pagina o paginas segun donde se reutilicen*/ 
-    --background-color: #EEEDEB;
+    --Color-fondo-pagina: #EEEDEB;
  
 }
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
@@ -32,12 +38,12 @@
 
 /*APLICAMOS ESTILOS A TODOS LAS ETIQUETAS DE BODY EN GENERAL(TODAS LAS PAGINAS CON HTML)*/
 body {
-    /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var= sirve para llamar las variables y reutilizarlas */
+    /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var=(sirve para llamar las variables y reutilizarlas) , color=(colocar color al texto) */
     color: var(--Color-por-defecto);
-     /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var= sirve para llamar las variables y reutilizarlas */
-    background-color: var(--background-color);
-     /*llamamos la variable "--Color-por-defecto" para colocar el color al texto de la estructura basica de html var= sirve para llamar las variables y reutilizarlas */
-    /*font-family: var(--default-font);*/
+     /*llamamos la variable "--Color-fondo-pagina" para colocar el color al fondo de la pagina var= sirve para llamar las variables y reutilizarlas, background-color=(colocar color al fondo) */
+    background-color: var(--Color-fondo-pagina);
+     /*llamamos la variable "--Fuente_por_defecto" para colocar diferentes fuents en distintos dispositivos y plataformas de la estructura basica de html var= sirve para llamar las variables y reutilizarlas, font-family= (colocar tipo de fuente)*/
+    font-family: var(--Fuente_por_defecto);
   }
   
   /*
