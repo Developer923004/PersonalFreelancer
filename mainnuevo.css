@@ -23,6 +23,8 @@
     --Color-fondo-pagina: #EEEDEB;
     /*VARIABLE PARA: el color del texto del los enlaces del menu de la pagina o paginas segun donde se reutilicen*/
     --Color-texto-enlace: #149ddd;
+    /*VARIABLE PARA: el color del texto del acento de los titulos , parrafos etc en  la pagina o paginas segun donde se reutilicen*/
+    --Color-de-acento: #149ddd; 
  
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -62,19 +64,26 @@ body {
   a:hover {
     /*color= para colocar color al texto, color-mix= combinar colores, in srgb= espacio de color en el que se debe realizar la mezcla,var= sirve para llamar las variables y reutilizarlas,
     transparen= combina el color del acento con el color trnsparente en un 25%*/
-    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    color: color-mix(in srgb, var(--Color-de-acento), transparent 25%);
     /*elimina cualquier decoración predeterminada del enlace*/
     text-decoration: none;
   }
   
- /* 
+
+/*--------------------------------------------------------------
+# TITULOS Y SUBTITULOS DEL ENCABEZADO DE LA PAGINA WEB
+--------------------------------------------------------------*/
+
+ /*aplica a todos los elementos de encabezado, desde <h1> hasta <h6>*/
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
+    /*Establece el color del texto de los encabezados,color=(colocar color al texto), var= sirve para llamar las variables y reutilizarlas*/
     color: var(--heading-color);
+    /**/
     font-family: var(--heading-font);
   }*/
   
