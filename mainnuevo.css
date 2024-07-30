@@ -29,7 +29,7 @@
 
 
 /*--------------------------------------------------------------
-# ESTILO GENERAL Y CLASES COMPARTIDAS
+# BODY
 --------------------------------------------------------------*/
 
 /*APLICAMOS ESTILOS A TODOS LAS ETIQUETAS DE BODY EN GENERAL(TODAS LAS PAGINAS CON HTML)*/
@@ -43,6 +43,10 @@ body {
   }
   
 
+/*--------------------------------------------------------------
+# MENU DE NAVEGACION
+--------------------------------------------------------------*/
+
   /*APLICAMOS ESTILOS A TODOS LAS ETIQUETAS DE A EN GENERAL(TODAS LAS PAGINAS CON HTML) ENLACES DEL MENU*/
   a {
      /*llamamos la variable "--Color-texto-enlace" para colocar color a los enlaces del menu de la estructura basica de html var= sirve para llamar las variables y reutilizarlas, color=(colocar color al texto)*/
@@ -54,13 +58,16 @@ body {
     transition: 0.3s;
   }
   
-  /*
+  /*definimos el conportamiento del enlace del menu al pasar con el raton por encimaa <a>*/
   a:hover {
+    /*color= para colocar color al texto, color-mix= combinar colores, in srgb= espacio de color en el que se debe realizar la mezcla,var= sirve para llamar las variables y reutilizarlas,
+    transparen= combina el color del acento con el color trnsparente en un 25%*/
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    /*elimina cualquier decoración predeterminada del enlace*/
     text-decoration: none;
   }
   
-  
+ /* 
   h1,
   h2,
   h3,
