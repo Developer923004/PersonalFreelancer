@@ -5,7 +5,8 @@
 :root {
     /*CREAMOS VARIABLE PARA: asignar diferentes tipos de fuentes de la font-family, y el navegador interpretara la primera qu este disponible segun el sistema del usuario segun los diferentes dispositivos y plataformas*/
   --Fuente_por_defecto: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
+   /*VARIABLE PARA: asignar diferentes tipos de fuentes de la font-family para el encabezado de la página */
+  --Fuente-delencabezado: "Raleway",  sans-serif;
 } 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -25,6 +26,8 @@
     --Color-texto-enlace: #149ddd;
     /*VARIABLE PARA: el color del texto del acento de los titulos , parrafos etc en  la pagina o paginas segun donde se reutilicen*/
     --Color-de-acento: #149ddd; 
+    /*VARIABLE PARA: el color del texto del encabezado en  la pagina o paginas segun donde se reutilicen*/
+    --Color-del-encabezado: #050d18;
  
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -82,8 +85,8 @@ body {
   h5,
   h6 {
     /*Establece el color del texto de los encabezados,color=(colocar color al texto), var= sirve para llamar las variables y reutilizarlas*/
-    color: var(--heading-color);
-    /**/
-    font-family: var(--heading-font);
-  }*/
+    color: var(--Color-del-encabezado);
+    /*Establece la fuente que se usará para los encabezados, font-family= fuentes de letras, var= sirve para llamar las variables y reutilizarlas*/
+    font-family: var(--Fuente-delencabezado);
+  }
   
