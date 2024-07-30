@@ -28,9 +28,57 @@
     --Color-de-acento: #149ddd; 
     /*VARIABLE PARA: el color del texto del encabezado y subencabezados,en  la pagina o paginas segun donde se reutilicen(Freelancer Personal Website,Perfil Profesional,Acerca de mi,Experiencia,Servicios,Proyectos,Contacto)*/
     --Color-del-encabezado: #050d18;
- 
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# BODY
+--------------------------------------------------------------*/
+
+/*define dos variables personalizadas (--background-color y --surface-color) para un elemento con la clase .light-background. Estas variables se utilizan para establecer los colores de fondo y superficie de un elemento*/
+/*clase=".light-background" en html*/
+.light-background {
+  /*creamos dos variables personalizadas "background-color" y "surface-color", para darle color al fondo y ala superficie de la clase ".light-background" blanco*/
+  --background-color: #f4fafd;
+  --surface-color: #ffffff;
+}
+
+
+/*
+.dark-background {
+  --background-color: #040b14;
+  --default-color: #ffffff;
+  /*--heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}*/
+
+
+/* Smooth scroll */
+/*
+:root {
+  scroll-behavior: smooth;
+}
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------
