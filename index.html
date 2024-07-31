@@ -23,8 +23,23 @@
   <title>Personal Freelancer</title>
   <!--Enlaza un archivo CSS externo para aplicar estilos a la página-->
   <link rel="stylesheet" href="mainnuevo.css">
-  
-  <!-- Enlace a un archivo CSS externo -->
+  <!--Bliblioteca para las funciones de animacion de AOS , para las funciones: "data-aos="fade-up" y data-aos-delay="100"-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+  <!--Inicializar AOS: Inicializa AOS en tu archivo JavaScript para que las animaciones se activen-->
+  <!--defer= indica al navegador que debe cargar el script en segundo plano mientras se procesa el HTML,
+   es más comúnmente usado en scripts ubicados en el <head> usualmente los script van al final del body-->
+  <script defer>
+    /*addEventListener= sirve para escuchar el evento DOMContentLoaded, DOMContentLoaded=Este evento se dispara cuando el documento HTML ha sido completamente cargado y parseado
+    function() { ... }= Esta es una función anónima que se ejecutará cuando se dispare el evento DOMContentLoaded,
+    AOS.init()= Este método inicializa la biblioteca AOS. Llama a la función init de AOS, que configura la biblioteca y aplica las animaciones definidas en los atributos data-aos*/
+    document.addEventListener('DOMContentLoaded', function() {
+        /*Este método inicializa la biblioteca AOS. Llama a la función init de AOS, que configura la biblioteca y aplica las animaciones definidas en los atributos data-aos*/
+      AOS.init();
+    });
+  </script>
+
+
 </head>
 <!--head fin-->
 
@@ -131,7 +146,10 @@
             </div>
             <!---------------------------------------------------------------->
       
-            
+        <!--utiliza atributos personalizados para aplicar animaciones en el elemento <div> con la clase container-->
+         <!--creamos div con clase="container",data-aos=es una biblioteca para animar elementos de aos para desplazarse por la pagina,
+        "fade-up"= tipo de animacion que se aplicara , que el elemento se desplase hacia arriba y se desvanezca existen varios como: fade,slide,zoom etc,
+        data-aos-delay="100" ,especifica un retrazo en la animacion en este caso de 100  milisegundos-->   
         <div class="container" data-aos="fade-up" data-aos-delay="100">
       
             <div class="row skills-content skills-animation">
@@ -267,9 +285,16 @@
   </footer>
   <!-------------------------------------------------------------------------------------------------------------------------------------->
 
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------->
   <!-- Enlaza un archivo JavaScript externo para añadir interactividad a la página -->
   <script src="scripts.js"></script>
-  
+
+   <!--Bliblioteca para las funciones de animacion de AOS , para las funciones: "data-aos="fade-up" y data-aos-delay="100" desde javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-------------------------------------------------------------------------------------------------------------------------------------->
+
+
 </body>
 <!--body fin-->
 
