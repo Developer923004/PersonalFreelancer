@@ -41,7 +41,7 @@
 /*clase=".light-background" en html*/
 .light-background {
   /*creamos dos variables personalizadas "background-color" y "surface-color", para darle color al fondo y ala superficie de la clase ".light-background" blanco*/
-  --background-color: #f60909;
+  --background-color: #f4fafd;
   --surface-color: #ffffff;
 }
 
@@ -63,22 +63,6 @@
   scroll-behavior: smooth;
 }
   */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -139,3 +123,22 @@ body {
     font-family: var(--Fuente-delencabezado);
   }
   
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* Espaciado entre columnas */
+  }
+  
+  .skills-content {
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo gris claro para la sección de habilidades */
+  }
+  
+  .skills-animation {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skills-animation:hover {
+    transform: scale(1.05); /* Escala el elemento ligeramente al pasar el ratón */
+  }
