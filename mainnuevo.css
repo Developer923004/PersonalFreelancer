@@ -123,22 +123,27 @@ body {
     font-family: var(--Fuente-delencabezado);
   }
   
-  
+
+/*--------------------------------------------------------------
+# SECCION HABILIDADES
+--------------------------------------------------------------*/
+  /*para crear una estructura de cuadrícula flexible utilizando el sistema de diseño de Flexbox en CSS*/
   .row {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;/*Esta propiedad convierte el contenedor .row en un contenedor flex. Esto activa el Flexbox Layout, que permite a los elementos hijos (en este caso, las columnas) ser dispuestos en una fila flexible*/
+    flex-wrap: wrap;/*controla cómo los elementos flexibles se envuelven dentro del contenedor flex,  los elementos hijos se envuelven en la siguiente línea si no hay suficiente espacio en la línea actual. Esto es útil para crear diseños de cuadrícula responsivos, donde las columnas se envuelven en la siguiente línea cuando el contenedor es demasiado estrecho para acomodarlas en una sola línea.*/
     margin: 0 -15px; /* Espaciado entre columnas */
   }
-  
+  /*contenido de la seccion*/
   .skills-content {
-    padding: 20px;
+    padding: 20px; /*espacio interno entre el borde de un elemento y su contenido*/
     background-color: #f4f4f4; /* Fondo gris claro para la sección de habilidades */
   }
   
+  /*se usa para crear una animación suave al cambiar la propiedad transform de un elemento. Esta transición dura 0.3 segundos y utiliza una función de temporización ease-in-out para proporcionar un efecto de aceleración y desaceleración natural.*/
   .skills-animation {
     transition: transform 0.3s ease-in-out;
   }
-  
+  /*la pasar el mouse*/
   .skills-animation:hover {
     transform: scale(1.05); /* Escala el elemento ligeramente al pasar el ratón */
   }
