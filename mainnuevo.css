@@ -41,7 +41,7 @@
 /*clase=".light-background" en html*/
 .light-background {
   /*creamos dos variables personalizadas "background-color" y "surface-color", para darle color al fondo y ala superficie de la clase ".light-background" blanco*/
-  --background-color: #0d9fe8;
+  --background-color: #f60909;
   --surface-color: #ffffff;
 }
 
