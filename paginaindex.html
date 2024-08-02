@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link rel="stylesheet" href="paginaindex.css">
+<script defer>
+// Agrega evento de click al botón de "Ver más" en la sección de hero
+document.querySelector('#hero button').addEventListener('click', () => {
+    // Agrega la clase "active" al elemento con el id "about"
+    document.querySelector('#about').classList.add('active');
+});
+
+// Agrega evento de click a los enlaces de la navegación
+document.querySelectorAll('nav a').forEach((enlace) => {
+    enlace.addEventListener('click', (evento) => {
+        // Evita que el enlace siga su comportamiento por defecto
+        evento.preventDefault();
+        
+        // Obtiene el atributo "href" del enlace
+        const href = enlace.getAttribute('href');
+        
+        // Agrega la clase "active" al elemento con el id que coincide con el atributo "href"
+        document.querySelector(href).classList.add('active');
+    });
+});
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web de Freelancer de Animaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Bienvenido a mi página web de freelancer de animaciones</h1>
+        <p>Explora mis servicios y portafolio de animaciones</p>
+        <button>Ver más</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Soy un freelancer de animaciones con experiencia en crear contenido animado para diversas plataformas.</p>
+        <img src="profile-picture.jpg" alt="Foto de perfil">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Animaciones 2D y 3D</li>
+            <li>Diseño de personajes y entornos</li>
+            <li>Creación de storyboards y guiones</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portafolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="portfolio-item-1.jpg" alt="Imagen de portafolio 1">
+                <p>Animación 2D para una campaña publicitaria</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio-item-2.jpg" alt="Imagen de portafolio 2">
+                <p>Diseño de personajes para una serie de animación</p>
+            </div>
+            <!-- Agrega más items de portafolio aquí -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mi correo electrónico o redes sociales</p>
+        <ul>
+            <li><a href="mailto:tu-correo-electronico@example.com">Correo electrónico</a></li>
+            <li><a href="https://www.linkedin.com/in/tu-perfil-linkedin/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/tu-perfil-instagram/">Instagram</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Página Web de Freelancer de Animaciones</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
