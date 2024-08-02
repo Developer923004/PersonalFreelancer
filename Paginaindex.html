@@ -1,0 +1,164 @@
+<!--Declara el tipo de documento y la versión de HTML que se está utilizando (HTML 5)-->
+<!DOCTYPE html>
+
+<!--Define el inicio del documento HTML y establece el idioma de la página como español (es)-->
+<html lang="es">
+
+<!--head inicio-->
+<!--Contiene metadatos y enlaces a recursos externos como hojas de estilo y scripts.-->
+<head>
+
+  <!--Define el conjunto de caracteres utilizado (UTF-8 es universal y soporta la mayoría de los caracteres)--> 
+  <meta charset="UTF-8">
+  <!--Asegura que la página se visualice correctamente en dispositivos móviles ajustando el ancho y la escala inicial(resposive)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Proporciona una descripción de la página web para los motores de búsqueda-->
+  <meta name="description" content="Descripción de la página web">
+  <!--Define palabras clave relacionadas con el contenido de la página-->
+  <meta name="keywords" content="palabras, clave, separadas, por, comas">
+  <!--Identifica al autor de la página-->
+  <meta name="author" content="Tu Nombre">
+  <!--<title>: Define el título de la página que se muestra en la pestaña del navegador-->
+  <title>Mi Página Web</title>
+  <!--Enlaza un archivo CSS externo para aplicar estilos a la página-->
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.163.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<!--head fin-->
+
+<!--body inicio-->
+<!--Contiene el contenido visible de la página web-->
+<body>
+
+  <!--header inicio-->  
+  <!--Contiene el encabezado de la página, normalmente incluye el logotipo y la navegación principal-->
+  <header>
+
+    <!--nav inicio-->
+    <!--Contiene el menú de navegación con enlaces a diferentes secciones de la página-->
+    <nav>
+
+      <!--ul inicio-->
+      <!--define una lista desordenada, agrupa un conjunto de elementos que se muestran por defecto con viñetas-->      
+      <ul>
+        <!---define un elemento de la lista (<li>) dentro de una lista desordenada (<ul>) con un enlace (<a>) apuntando a un fragmento de la misma
+         pagina con el id="home" o id="about" o id="services" o id="contact"  -->
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <!--ul fin-->
+    </nav>
+    <!--nav fin-->
+
+    <!--se utiliza para definir un encabezado de nivel 1 en una página web, define el encabezado mas inportante tamaño de fuente mas grande que todos-->
+    <h1>Bienvenido a Mi Página Web</h1>
+  </header>
+  <!--header fin-->
+
+  <!--main inicio-->
+  <!--Define el contenido principal de la página, dividido en secciones-->
+  <main>
+
+    <!--section (1) inicio-->
+    <!--Secciones individual de la página (1 seccion)-->
+    <section id="home">
+      <!--Define un encabezado de nivel 2 en la página web mas pequeño que el <h1>-->  
+      <h2>Inicio</h2>
+      <!--Define un párrafo de texto en la página web-->
+      <p>Contenido de la sección de inicio.</p>
+    </section>
+    <!--section (1) fin-->
+
+
+    <!--section (2) inicio-->
+    <!--Secciones individual de la página (2 seccion)-->
+    <section id="about">
+      <!--Define un encabezado de nivel 2 en la página web mas pequeño que el <h1>-->  
+      <h2>Sobre Nosotros</h2>
+      <!--Define un párrafo de texto en la página web-->
+      <p>Información sobre nosotros.</p>
+    </section>
+    <!--section (2) fin-->
+
+    <!--section (3) inicio-->
+    <!--Secciones individual de la página (3 seccion)-->
+    <section id="services">
+      <!--Define un encabezado de nivel 2 en la página web mas pequeño que el <h1>-->  
+      <h2>Servicios</h2>
+      <!--Define un párrafo de texto en la página web-->
+      <p>Descripción de los servicios ofrecidos.</p>
+    </section>
+    <!--section (3) fin-->
+
+    <!--section (4) inicio-->
+    <!--Secciones individual de la página (4 seccion)-->
+    <section id="contact">
+      <!--Define un encabezado de nivel 2 en la página web mas pequeño que el <h1>-->  
+      <h2>Contacto</h2>
+    
+      <!--form  inicio-->
+      <!--Define el inicio de un formulario HTML,-->
+      <!--action="/enviar-formulario": Especifica la URL a la que se enviarán los datos del formulario cuando se envíe.
+       En este caso, los datos se enviarán a la ruta /enviar-formulario en el servidor.-->
+       <!--method="post": Indica el método HTTP utilizado para enviar los datos del formulario-->
+       <!--post= significa que los datos se enviarán en el cuerpo de la solicitud, lo que es adecuado para enviar datos sencibles o grandes-->
+      <form action="/enviar-formulario" method="post">
+        <!--Define una etiqueta para el campo de entrada del nombre,for="name" se asocia con el id="name" del input-->
+        <label for="name">Nombre:</label>
+        <!--Define un campo de entrada de texto para que el usuario ingrese su nombre,
+        type="text": Especifica que el campo de entrada acepta texto,
+        id="name": Identifica el campo de entrada, lo que permite que la etiqueta <label> se asocie con él y facilita la manipulación con JavaScript
+        name="name": Define el nombre del campo de entrada, que es el nombre que se usará para identificar los datos enviados al servidor
+        required: Indica que el campo es obligatorio y el formulario no se puede enviar sin que se complete este campo   -->
+        <input type="text" id="name" name="name" required>
+        <!--Define una etiqueta para el campo de entrada del correo electrónico-->
+        <label for="email">Correo Electrónico:</label>
+        <!--type="email": Especifica que el campo de entrada acepta una dirección de correo electrónico. Los navegadores pueden validar automáticamente el formato del correo electrónico.
+            id="email": Identifica el campo de entrada para la asociación con la etiqueta <label>
+            name="email": Define el nombre del campo de entrada para el envío de datos al servidor
+            required: Indica que el campo es obligatorio y el formulario no se puede enviar sin que se complete este campo  -->
+        <input type="email" id="email" name="email" required>
+        <!-- Define una etiqueta para el campo de entrada del mensaje-->
+        <label for="message">Mensaje:</label>
+        <!--id="message": Identifica el área de texto para la asociación con la etiqueta <label>
+            name="message": Define el nombre del campo de entrada para el envío de datos al servidor
+            rows="4": Define la altura del área de texto en términos de número de filas visibles
+            required: Indica que el campo es obligatorio y el formulario no se puede enviar sin que se complete este campo-->
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <!--Define un botón que envía el formulario-->
+        <!--type="submit": Indica que el botón enviará el formulario cuando se haga clic en él-->
+        <button type="submit">Enviar</button>
+      </form>
+      <!--form  fin-->
+
+    </section>
+    <!--section (4) fin-->
+
+  </main>
+  <!--main fin-->
+
+  <!--foorter inicio-->
+  <!--Contiene la información del pie de página, como los derechos de autor-->
+  <footer>
+    <!--&copy Representa el símbolo de copyright (©) en HTML y se crea un parrafo-->
+    <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+  </footer>
+  <!--foorter fin-->
+
+  <!-- Enlaza un archivo JavaScript externo para añadir interactividad a la página -->
+  <script src="scripts.js"></script>
+  
+</body>
+<!--body fin-->
+
+</html>
+<!---->
