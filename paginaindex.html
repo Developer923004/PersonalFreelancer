@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<link rel="stylesheet" href="paginaindex.css">
-<script defer>
-// Agrega evento de click al botón de "Ver más" en la sección de hero
-document.querySelector('#hero button').addEventListener('click', () => {
-    // Agrega la clase "active" al elemento con el id "about"
-    document.querySelector('#about').classList.add('active');
-});
 
-// Agrega evento de click a los enlaces de la navegación
-document.querySelectorAll('nav a').forEach((enlace) => {
-    enlace.addEventListener('click', (evento) => {
-        // Evita que el enlace siga su comportamiento por defecto
-        evento.preventDefault();
-        
-        // Obtiene el atributo "href" del enlace
-        const href = enlace.getAttribute('href');
-        
-        // Agrega la clase "active" al elemento con el id que coincide con el atributo "href"
-        document.querySelector(href).classList.add('active');
-    });
-});
-
-</script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web de Freelancer de Animaciones</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="paginaindex.css">
+    <script defer>
+        // Agrega evento de click al botón de "Ver más" en la sección de hero
+        document.querySelector('#hero button').addEventListener('click', () => {
+            // Agrega la clase "active" al elemento con el id "about"
+            document.querySelector('#about').classList.add('active');
+        });
+        
+        // Agrega evento de click a los enlaces de la navegación
+        document.querySelectorAll('nav a').forEach((enlace) => {
+            enlace.addEventListener('click', (evento) => {
+                // Evita que el enlace siga su comportamiento por defecto
+                evento.preventDefault();
+                
+                // Obtiene el atributo "href" del enlace
+                const href = enlace.getAttribute('href');
+                
+                // Agrega la clase "active" al elemento con el id que coincide con el atributo "href"
+                document.querySelector(href).classList.add('active');
+            });
+        });
+        
+        </script>
 </head>
 <body>
     <!-- Header -->
