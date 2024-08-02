@@ -30,6 +30,50 @@
         });
         
         </script>
+<script defer>// Agrega la clase "active" a los elementos de la sección de servicios y los hace aparecer con una animación
+    $('#services').waypoint(function() {
+      $('#services li').each(function() {
+        $(this).addClass('active');
+        $(this).animate({
+          opacity: 1,
+          top: 0
+        }, 500);
+      });
+    }, {
+      offset: '50%'
+    });</script>
+
+<script defer>// Agrega la clase "active" a la sección de portafolio y desplaza la página hacia abajo
+$('#portfolio').waypoint(function() {
+  $('#portfolio').addClass('active');
+  $('html, body').animate({
+    scrollTop: $('#portfolio').offset().top
+  }, 1000);
+}, {
+  offset: '50%'
+});</script>
+
+<script defer>// Agrega la clase "active" a los elementos de la sección de contacto y los hace aparecer con una animación
+    $('#contact').waypoint(function() {
+      $('#contact li').each(function() {
+        $(this).addClass('active');
+        $(this).animate({
+          opacity: 1,
+          top: 0
+        }, 500);
+      });
+    }, {
+      offset: '50%'
+    });</script>
+
+<script defer>// Agrega una animación de carga a la página
+    $(window).on('load', function() {
+      $('#loader').fadeOut(500);
+      $('#hero').animate({
+        opacity: 1
+      }, 500);
+    });</script>
+
 </head>
 <body>
     <!-- Header -->
@@ -45,7 +89,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="active">
         <h1>Bienvenido a mi página web de freelancer de animaciones</h1>
         <p>Explora mis servicios y portafolio de animaciones</p>
         <button>Ver más</button>
@@ -69,7 +113,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="active">
         <h2>Portafolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
@@ -85,7 +129,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="active">
         <h2>Contacto</h2>
         <p>Puedes contactarme a través de mi correo electrónico o redes sociales</p>
         <ul>
