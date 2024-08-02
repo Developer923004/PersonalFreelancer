@@ -146,4 +146,5 @@ body {
   /*la pasar el mouse*/
   .skills-animation:hover {
     transform: scale(1.05); /* Escala el elemento ligeramente al pasar el ratón */
+    background-color: red;
   }
